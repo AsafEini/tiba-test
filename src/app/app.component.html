@@ -1,0 +1,16 @@
+<button (click)="openModal()">Add Product</button>
+<div class="main-container">
+  <div class="header">
+    <span  class="header-title" *ngFor="let header of headerConfig">{{header}}</span>
+  </div>
+  <div class="content">
+    <div class="products" *ngFor="let product of listOfProducts | keyvalue">
+      <span  class="product-info" *ngFor="let header of headerConfig">{{product.value[header]}}</span>
+    </div>
+  </div>
+  <div class="modal-container" *ngIf="isModalOpen">
+    <app-create-products (singleProduct)="getCreatedProduct($event)" (exitAction) = "closeModal($event)"></app-create-products>
+  </div>
+</div>
+
+

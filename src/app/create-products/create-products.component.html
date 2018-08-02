@@ -1,0 +1,20 @@
+<div class="wizard-container">
+  <div>
+    <span>Name</span>
+    <input #name>
+  </div>
+  <div>
+    <span>Category</span>
+    <input #category>
+  </div>
+  <div>
+    <span>Price</span>
+    <input #price>
+  </div>
+  <div>
+    <span>Created Date</span>
+    <input type="date" #createdDate>
+  </div>
+  <button (click)="createProduct(name.value, category.value, price.value, createdDate.value)">Create</button>
+  <button (click)="closeModal()">Exit</button>
+</div>

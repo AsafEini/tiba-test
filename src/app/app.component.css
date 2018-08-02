@@ -1,0 +1,35 @@
+.main-container{
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+}
+
+.modal-container{
+  position: absolute;
+  width: 320px;
+  height: 160px;
+  background-color: lightgrey;
+  left: 42%;
+}
+.header{
+  display: flex;
+  justify-content: space-around;
+}
+
+.header-title{
+  margin: 10px;
+}
+
+.content{
+  display: flex;
+  flex-direction: column
+}
+
+.products{
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+.product-info{
+  margin: 10px;
+}
